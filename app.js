@@ -20,6 +20,10 @@ searchBtn.addEventListener("click", GetCountryData)
 
 // functions
 
+window.onload = function(){
+    GetAfricaCases()
+}
+
 // gets user input and gets data for the entered country
 function GetCountryData(){
     let CountryName = SearchCountry.value
@@ -102,7 +106,7 @@ function CreateLi(element){
 // africa data
 function GetAfricaCases(){
 	let results;
-    fetch(`https://covid-api.mmediagroup.fr/v1/cases?`)
+    fetch(`https://covid-api.mmediagroup.fr/v1/cases?continent=Africa`)
     .then(response=>response.json())
     .then(data=>{
         results = [data];

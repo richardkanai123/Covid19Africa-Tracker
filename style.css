@@ -210,16 +210,28 @@ button i{
     justify-content: space-around;
     font-size:1.3rem ;
     text-align: center;
-    padding:0.5rem ;
+    padding:0.25rem ;
 }
 
 .DataTable ul li div{
     margin: 1rem;
 }
 
-body a{
+body a#dsourse{
     color: red;
-    position: absolute;
+    position: fixed;
+    bottom: 10%;
+    right:2%;
+    animation: blink infinite 3s;
+}
+
+@keyframes blink {
+    0%{
+        color: rgba(255, 0, 0, 0.425);
+    }
+    25%{ color: rgba(9, 219, 27, 0.425);}
+    50%{color: rgba(4, 117, 14, 0.425);}
+    100%{color: rgb(255, 30, 0);}
 }
 
 @media(max-width:800px){
