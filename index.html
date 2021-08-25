@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./LogoMakr-266gMf.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Africa Covid Situation</title>
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <a href="#">
+            <img src="./LogoMakr-266gMf.png" alt="logo">
+        </a>
+        <h1>Covid19 Africa Figures</h1>
+        <h3>Stay Safe, Wear A Mask to Save Lives. </h3>
+    </div>
+
+    <!-- search -->
+    <div class="seachBar">
+        <input list="CountryList" id="SearchCountry" placeholder="Pick or type country">
+        <!-- country list to pick from -->
+            <datalist id="CountryList">
+                <option value="Algeria">
+                <option value="Angola">
+                <option value="Benin">
+                <option value="Botswana">
+                <option value="Burundi">
+                <option value="Cameroon">
+                <option value="Chad">
+                <option value="Central African Republic">
+                <option value="Comoros">
+                <option value="Cote d'Ivoire">
+                <option value="Egypt">
+                <option value="Equatorial Guinea">
+                <option value="Ethiopia">
+                <option value="Gabon">
+                <option value="Gambia">
+                <option value="Ghana">
+                <option value="Guinea">
+                <option value="Guinea-Bissau">
+                <option value="Kenya">
+                <option value="Malawi">
+                <option value="Mali">
+                <option value="Mauritania">
+                <option value="Mauritius">
+                <option value="Morocco">
+                <option value="Mozambique">
+                <option value="Namibia">
+                <option value="Niger">
+                <option value="Nigeria">
+                <option value="Rwanda">
+                <option value="Sao Tome and Principe">
+                <option value="Senegal">
+                <option value="Seychelles">
+                <option value="Sierra Leone">
+                <option value="Somalia"></option>
+                <option value="South Africa">
+                <option value="South Sudan">
+                <option value="Sudan">
+                <option value="Tanzania">
+                <option value="Togo">
+                <option value="Tunisia">
+                <option value="Uganda">
+                <option value="Zambia">
+                <option value="Zimbabwe">
+            </datalist>
+        
+        <button id="searchBtn">
+            <i class="bi bi-search"></i>
+        </button>
+    </div>
+
+    <!-- error in case of no entry -->
+    <div class="errorinfo"></div>
+
+
+    <!-- info cards -->
+    <div class="countryData">
+        <div class="countryInfo">
+            <h2>Country Information</h2>
+            <span>
+                <h3 class="countryName"></h3>
+            </span>
+            <span>
+                <h3>Capital City</h3>
+                <h4 class="CapitalCity"></h4>
+            </span>
+            <span>
+                <h3>Population</h3>
+                <h4 class="Population"></h4>
+            </span>
+            <span>
+                <h3>Life Expectancy</h3>
+                <h4 class="Life"></h4>
+            </span>
+        </div>
+
+        <div class="cases">
+            <div class="Card">
+                <h5>Confirmed Cases</h5>
+                <h3 id="TotalCases"></h3>
+            </div>
+            <div class="Card">
+                <h5>Confirmed Recoveries</h5>
+                <h3 id="TotalRecoveries"></h3>
+            </div>
+            <div class="Card">
+                <h5>Confirmed Deaths</h5>
+                <h3 id="TotalDeaths"></h3>
+            </div>
+        </div>
+        <!-- vacccines -->
+        <div class="VaccinesData">
+            <h5>Vaccination</h5>
+            <span>
+                <h4>Fully Vaccinated</h4>
+                <h3 id="FullyVaccinated"></h3>
+            </span>
+            <span>
+                <h4>Partially Vaccinated</h4>
+                <h3 id="PartialVacc"></h3>
+            </span>
+            <span>
+                <h4>Vaccinated Population Percentage</h4>
+                <h3 id="PercVaccinated"></h3>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="DataTable">
+        <h2>World Statistics</h2>
+        <ul>
+            <li>
+                <div class="CountryData">Country</div>
+                <div class="CasesData">Confirmed</div>
+                <div class="DeathsData">Deaths</div>
+            </li>
+        </ul>
+    </div>
+
+    <a href="https://github.com/M-Media-Group/Covid-19-API">Data Source</a>
+    <script src="app.js"></script>
+</body>
+</html>
